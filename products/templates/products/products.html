@@ -5,7 +5,9 @@
 
 <div class="container header-container-products">
     <div class="row">
-        <div class="col"></div>
+        <div class="col">
+        <h3>ALL Products</h3>
+        </div>
     </div>
 </div>
 
@@ -16,7 +18,9 @@
     {% for product in products %}
     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
     <div class="card">
+        <a href="{% url 'product_detail' product.id %}">
         <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top">
+        </a>
         <h6>{{ product.name }}</h6>
         <p class="price">€{{ product.price }}</p>
         <p><button>Add to Cart</button></p>
