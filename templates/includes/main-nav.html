@@ -17,10 +17,10 @@
                 Equipment
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Golf Clubs</a>
-                <a href="" class="dropdown-item">Golf Balls</a>
-                <a href="" class="dropdown-item">Golf Bags</a>
-                <a href="" class="dropdown-item">Assecories</a>
+                <a href="{% url 'products' %}?category=golf_clubs" class="dropdown-item">Golf Clubs</a>
+                <a href="{% url 'products' %}?category=golf_balls" class="dropdown-item">Golf Balls</a>
+                <a href="{% url 'products' %}?category=golf_bags" class="dropdown-item">Golf Bags</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
             </div>
         </li>
 
